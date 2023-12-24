@@ -2,7 +2,7 @@ public class Task {
     protected String name;
     protected String description;
     protected int id;
-    protected String status;
+    protected TaskStatus status;
 
     @Override
     public String toString() {
