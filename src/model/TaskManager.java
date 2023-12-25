@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -39,5 +41,4 @@ public interface TaskManager {
 	public HashMap<Integer, EpicTask> getEpicTasks();
 
 	public ArrayList<SubTask> getEpicSubTasks(int epicId);
-
 }

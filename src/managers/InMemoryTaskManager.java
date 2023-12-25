@@ -1,3 +1,11 @@
+package managers;
+
+import model.EpicTask;
+import model.SubTask;
+import model.Task;
+import model.TaskManager;
+import model.TaskStatus;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -7,40 +15,40 @@ public class InMemoryTaskManager implements TaskManager {
 	private HashMap<Integer, EpicTask> epicTasks = new HashMap<>();
 	private HashMap<Integer, SubTask> subTasks = new HashMap<>();
 	private int nextId = 1;
-	InMemoryHistoryManager historyManager = new Managers().getDefaultHistory();
+	InMemoryHistoryManager historyManager = Managers.getDefaultHistory();
 
 	@Override
 	public void create(Task task) {
-		task.id = nextId++;
-		tasks.put(task.id, task);
+		task.setId(nextId++);
+		tasks.put(task.getId(), task);
 	}
 
 	@Override
 	public void create(SubTask subTask) {
-		subTask.id = nextId++;
-		subTasks.put(subTask.id, subTask);
+		subTask.setId(nextId++);
+		subTasks.put(subTask.getId(), subTask);
 	}
 
 	@Override
 	public void create(EpicTask epic) {
-		epic.id = nextId++;
+		epic.setId(nextId++);
 
 		for (Integer subId : epic.getSubIds()) {
-			subTasks.get(subId).setEpicId(epic.id);
+			subTasks.get(subId).setEpicId(epic.getId());
 		}
 
 		checkStatus(epic);
-		epicTasks.put(epic.id, epic);
+		epicTasks.put(epic.getId(), epic);
 	}
 
 	@Override
 	public void update(Task task) {
-		tasks.put(task.id, task);
+		tasks.put(task.getId(), task);
 	}
 
 	@Override
 	public void update(SubTask subTask) {
-		subTasks.put(subTask.id, subTask);
+		subTasks.put(subTask.getId(), subTask);
 
 		checkStatus(epicTasks.get(subTask.getEpicId()));
 	}
@@ -49,7 +57,7 @@ public class InMemoryTaskManager implements TaskManager {
 	public void update(EpicTask epic) {
 		checkStatus(epic);
 
-		epicTasks.put(epic.id, epic);
+		epicTasks.put(epic.getId(), epic);
 	}
 
 	private void checkStatus(EpicTask epic) {
@@ -57,9 +65,9 @@ public class InMemoryTaskManager implements TaskManager {
 		for (Integer subId : epic.getSubIds()) {
 			SubTask sub = subTasks.get(subId);
 
-			if (sub.status == TaskStatus.NEW) {
+			if (sub.getStatus() == TaskStatus.NEW) {
 				sumStatus++;
-			} else if (sub.status == TaskStatus.DONE) {
+			} else if (sub.getStatus() == TaskStatus.DONE) {
 				sumStatus += 2;
 			} else {
 				sumStatus += 3;
@@ -67,11 +75,11 @@ public class InMemoryTaskManager implements TaskManager {
 		}
 
 		if (sumStatus == epic.getSubIds().size()) {
-			epic.status = TaskStatus.NEW;
+			epic.setStatus(TaskStatus.NEW);
 		} else if (sumStatus == epic.getSubIds().size() * 2) {
-			epic.status = TaskStatus.DONE;
+			epic.setStatus(TaskStatus.DONE);
 		} else {
-			epic.status = TaskStatus.IN_PROGRESS;
+			epic.setStatus(TaskStatus.IN_PROGRESS);
 		}
 	}
 
@@ -86,7 +94,7 @@ public class InMemoryTaskManager implements TaskManager {
 
 		for (EpicTask value : epicTasks.values()) {
 			value.getSubIds().clear();
-			value.status = TaskStatus.NEW;
+			value.setStatus(TaskStatus.NEW);
 		}
 	}
 

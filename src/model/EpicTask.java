@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 
 public class EpicTask extends Task {
@@ -13,7 +15,7 @@ public class EpicTask extends Task {
 
     @Override
     public String toString() {
-        return "EpicTask{" +
+        return "model.EpicTask{" +
                 "subIds=" + subIds +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +

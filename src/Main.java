@@ -1,3 +1,9 @@
+import managers.InMemoryTaskManager;
+import model.EpicTask;
+import model.SubTask;
+import model.Task;
+import model.TaskStatus;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -7,27 +13,27 @@ public class Main {
 		InMemoryTaskManager manager = new InMemoryTaskManager();
 		Task t = new Task();
 
-		t.description = "asdasd";
-		t.name = "One";
-		t.status = TaskStatus.NEW;
+		t.setDescription("asdasd");
+		t.setName("One");
+		t.setStatus(TaskStatus.NEW);
 		manager.create(t);
 
 		t = new Task();
-		t.name = "Two";
+		t.setName("Two");
 		manager.create(t);
 
-		t.status = TaskStatus.DONE;
+		t.setStatus(TaskStatus.DONE);
 		manager.update(t);
 
 		SubTask s = new SubTask();
 
-		s.name = "S1";
-		s.status = TaskStatus.DONE;
+		s.setName("S1");
+		s.setStatus(TaskStatus.DONE);
 		manager.create(s);
 
 		s = new SubTask();
-		s.name = "S2";
-		s.status = TaskStatus.IN_PROGRESS;
+		s.setName("S2");
+		s.setStatus(TaskStatus.IN_PROGRESS);
 		manager.create(s);
 
 		EpicTask e = new EpicTask();
