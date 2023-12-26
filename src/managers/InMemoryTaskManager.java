@@ -1,21 +1,21 @@
 package managers;
 
+import history.InMemoryHistoryManager;
 import model.EpicTask;
 import model.SubTask;
 import model.Task;
-import model.TaskManager;
 import model.TaskStatus;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
+import java.util.LinkedList;
 
 public class InMemoryTaskManager implements TaskManager {
 	private HashMap<Integer, Task> tasks = new HashMap<>();
 	private HashMap<Integer, EpicTask> epicTasks = new HashMap<>();
 	private HashMap<Integer, SubTask> subTasks = new HashMap<>();
 	private int nextId = 1;
-	InMemoryHistoryManager historyManager = Managers.getDefaultHistory();
+	private InMemoryHistoryManager historyManager = Managers.getDefaultHistory();
 
 	@Override
 	public void create(Task task) {
@@ -183,7 +183,7 @@ public class InMemoryTaskManager implements TaskManager {
 		return sub;
 	}
 
-	public List<Task> getHistory() {
+	public LinkedList<Task> getHistory() {
 		return historyManager.getHistory();
 	}
 }

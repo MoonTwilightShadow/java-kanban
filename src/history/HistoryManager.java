@@ -1,4 +1,6 @@
-package model;
+package history;
+
+import model.Task;
 
 import java.util.LinkedList;
 

@@ -1,6 +1,5 @@
-package managers;
+package history;
 
-import model.HistoryManager;
 import model.Task;
 
 import java.util.LinkedList;

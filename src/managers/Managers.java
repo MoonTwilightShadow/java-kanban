@@ -1,6 +1,6 @@
 package managers;
 
-import model.TaskManager;
+import history.InMemoryHistoryManager;
 
 public class Managers {
 	public static TaskManager getDefault() {
