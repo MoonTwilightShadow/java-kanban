@@ -1,16 +1,18 @@
+import managers.FileBackedTasksManager;
 import managers.InMemoryTaskManager;
 import model.EpicTask;
 import model.SubTask;
 import model.Task;
 import model.TaskStatus;
 
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
 
 	public static void main(String[] args) {
-		InMemoryTaskManager manager = new InMemoryTaskManager();
+		FileBackedTasksManager manager = new FileBackedTasksManager("out.csv");
 		Task t = new Task();
 
 		t.setDescription("asdasd");
@@ -52,9 +54,7 @@ public class Main {
 		manager.getByIdTask(2);
 		manager.getByIdTask(2);
 
-		System.out.println(manager.getTasks());
-		System.out.println(manager.getSubTasks());
-		System.out.println(manager.getEpicTasks());
-		System.out.println(manager.getHistory());
+		FileBackedTasksManager newManager = FileBackedTasksManager.loadFromFile(Path.of("out.csv"));
+
 	}
 }

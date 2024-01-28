@@ -13,14 +13,12 @@ public class EpicTask extends Task {
 		this.subIds = subIds;
 	}
 
+	public void addSubIds(int id) {
+		subIds.add(id);
+	}
+
 	@Override
 	public String toString() {
-		return "model.EpicTask{" +
-				"subIds=" + subIds +
-				", name='" + name + '\'' +
-				", description='" + description + '\'' +
-				", id=" + id +
-				", status='" + status + '\'' +
-				'}';
+		return id + "," + TypeOfTasks.EPIC + "," + name + "," + status + "," + description + "\n";
 	}
 }

@@ -13,12 +13,6 @@ public class SubTask extends Task {
 
 	@Override
 	public String toString() {
-		return "model.SubTask{" +
-				"epicId=" + epicId +
-				", name='" + name + '\'' +
-				", description='" + description + '\'' +
-				", id=" + id +
-				", status='" + status + '\'' +
-				'}';
+		return id + "," + TypeOfTasks.SUBTASK + "," + name + "," + status + "," + description + "," + epicId + "\n";
 	}
 }
