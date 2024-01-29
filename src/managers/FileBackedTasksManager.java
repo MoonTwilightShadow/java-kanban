@@ -15,7 +15,9 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
 import exception.ManagerSaveException;
+
 public class FileBackedTasksManager extends InMemoryTaskManager {
     private final File fileName;
 
@@ -167,7 +169,7 @@ public class FileBackedTasksManager extends InMemoryTaskManager {
         manager.setNextId(maxId + 1);
 
         for (SubTask value : manager.subTasks.values()) {
-                manager.epicTasks.get(value.getEpicId()).addSubIds(value.getId());
+            manager.epicTasks.get(value.getEpicId()).addSubIds(value.getId());
         }
 
         List<Integer> historyIds = historyIdsFromString(lines.get(lines.size() - 1));
