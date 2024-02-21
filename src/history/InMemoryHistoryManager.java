@@ -2,10 +2,7 @@ package history;
 
 import model.Task;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class InMemoryHistoryManager implements HistoryManager {
     private Node head;
@@ -24,8 +21,10 @@ public class InMemoryHistoryManager implements HistoryManager {
 
     @Override
     public void remove(int id) {
-        removeNode(tasks.get(id));
-        tasks.remove(id);
+        if (tasks.get(id) != null) {
+            removeNode(tasks.get(id));
+            tasks.remove(id);
+        }
     }
 
     @Override
@@ -51,12 +50,14 @@ public class InMemoryHistoryManager implements HistoryManager {
         Node next = node.next;
 
         if (prev == null) {
-            head.next = next;
-        } else if (next == null) {
-            tail = prev;
-            tail.next = null;
+            head = next;
         } else {
             prev.next = next;
+        }
+
+        if (next == null) {
+            tail = prev;
+        } else {
             next.prev = prev;
         }
     }
