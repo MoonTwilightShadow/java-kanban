@@ -24,6 +24,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="junit.jupiter" level="project" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="b97a69d1-ed4f-4072-9b58-01b0c987954a" />
