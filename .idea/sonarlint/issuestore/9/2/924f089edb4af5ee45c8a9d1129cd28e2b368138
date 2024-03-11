@@ -1,4 +1,25 @@
 
-G	java:S106"+Replace this use of System.out by a logger.(Üé•¡8Ş›“âÜ1
-X	java:S125/"<This block of commented-out lines of code should be removed.(úÍ8ä¯áÜ1
-X	java:S1257"<This block of commented-out lines of code should be removed.(©’²Ü8µı¯áÜ1
+™
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(àÒşüøÿÿÿÿ8ßâ»üâ1
+]	java:S125"<This block of commented-out lines of code should be removed.(§„èûÿÿÿÿ8àâ»üâ1
+X	java:S125""<This block of commented-out lines of code should be removed.(òÌÜ8°¦¼üâ1
+]	java:S125("<This block of commented-out lines of code should be removed.(™¡ë“ıÿÿÿÿ8àâ»üâ1
+L	java:S1060"+Replace this use of System.out by a logger.(ŸÜõèÿÿÿÿÿ8áâ»üâ1
+G	java:S1061"+Replace this use of System.out by a logger.(¾‰Ü8áâ»üâ1
+R
+java:S1128"0Remove this unused import 'client.KVTaskClient'.(†Š¾şıÿÿÿÿ8¤¼üâ1
+N
+java:S1128"1Remove this unused import 'com.google.gson.Gson'.(–§8¥¼üâ1
+Z
+java:S1128"8Remove this unused import 'com.google.gson.GsonBuilder'.(”«à¬ÿÿÿÿÿ8¥¼üâ1
+^
+java:S1128"<Remove this unused import 'managers.FileBackedTasksManager'.(²¯‚¥şÿÿÿÿ8¥¼üâ1
+M
+java:S1128"+Remove this unused import 'model.EpicTask'.(ÃšÁ¨ıÿÿÿÿ8¥¼üâ1
+L
+java:S1128"*Remove this unused import 'model.SubTask'.(Ó­ßıÿÿÿÿ8¥¼üâ1
+T
+java:S1128
+"2Remove this unused import 'server.HttpTaskServer'.(ï’ˆâıÿÿÿÿ8±¦¼üâ1
+L
+java:S1128"/Remove this unused import 'java.nio.file.Path'.(×²êÂ8¥¼üâ1

@@ -118,7 +118,7 @@ public class FileBackedTasksManager extends InMemoryTaskManager {
         return epic;
     }
 
-    private void save() {
+    protected void save() {
         try (FileWriter fw = new FileWriter(fileName)) {
             fw.write("id,type,name,status,description,duration,startTime,epic\n");
 
@@ -271,7 +271,7 @@ public class FileBackedTasksManager extends InMemoryTaskManager {
         return ids;
     }
 
-    private static String historyToString(HistoryManager manager) {
+    protected static String historyToString(HistoryManager manager) {
         List<Task> tasks = manager.getHistory();
         String[] ids = new String[tasks.size()];
 

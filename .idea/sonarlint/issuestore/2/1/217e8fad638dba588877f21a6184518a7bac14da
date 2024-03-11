@@ -1,0 +1,20 @@
+
+T
+java:S1135 "2Complete the task associated to this TODO comment.(óËÃãøÿÿÿÿ8ÃÕøøâ1
+L	java:S106#"+Replace this use of System.out by a logger.(‰çÊºøÿÿÿÿ8ÄÕøøâ1
+G	java:S106%"+Replace this use of System.out by a logger.(€Ã˜Ï8ÄÕøøâ1
+L	java:S106,"+Replace this use of System.out by a logger.(ĞÕ±Ñùÿÿÿÿ8ÄÕøøâ1
+F	java:S1063"+Replace this use of System.out by a logger.(Ê³ß8ÅÕøøâ1
+F	java:S106="+Replace this use of System.out by a logger.(û€’^8ÆÕøøâ1
+G	java:S106?"+Replace this use of System.out by a logger.(€Ã˜Ï8ÆÕøøâ1
+L	java:S106F"+Replace this use of System.out by a logger.(ĞÕ±Ñùÿÿÿÿ8ÆÕøøâ1
+L	java:S106L"+Replace this use of System.out by a logger.(Ÿ…ëÎşÿÿÿÿ8ÈÕøøâ1
+G	java:S106Q"+Replace this use of System.out by a logger.(ÕÊ¼ã8ÈÕøøâ1
+L	java:S106T"+Replace this use of System.out by a logger.(—â„ùÿÿÿÿ8ÈÕøøâ1
+L	java:S106^"+Replace this use of System.out by a logger.(‹¤şÿÿÿÿ8äøûâ1
+G	java:S106b"+Replace this use of System.out by a logger.(Å—ô©8·Ó«ÿâ1
+L	java:S106k"+Replace this use of System.out by a logger.(™¾ë®şÿÿÿÿ8Øï«ÿâ1
+L	java:S106l"+Replace this use of System.out by a logger.(³Ú™—úÿÿÿÿ8§ ¬ÿâ1
+G	java:S106m"+Replace this use of System.out by a logger.(ÍÛŠ¡8§ ¬ÿâ1
+S
+java:S1128"1Remove this unused import 'java.io.OutputStream'.(Ó ³ÿÿÿÿÿ8•²úøâ1

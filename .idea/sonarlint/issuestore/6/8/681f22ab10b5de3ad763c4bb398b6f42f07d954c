@@ -1,9 +1,11 @@
 
-ˆ
-java:S1319)"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ÎåİÄıÿÿÿÿ
-ˆ
-java:S1319+"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(±šÚ±üÿÿÿÿ
-ˆ
-java:S1319-"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(›¯Åçùÿÿÿÿ
-†
-java:S1319/"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¹²ç˜
+
+java:S1319+"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ÎåİÄıÿÿÿÿ8¬ àîâ1
+
+java:S1319-"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(±šÚ±üÿÿÿÿ8­ àîâ1
+
+java:S1319/"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(›¯Åçùÿÿÿÿ8­ àîâ1
+
+java:S13191"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¹²ç˜8­ àîâ1
+•
+java:S13193"sThe return type of this method should be an interface such as "SortedSet" rather than the implementation "TreeSet".(—¡ï¾úÿÿÿÿ8­ àîâ1

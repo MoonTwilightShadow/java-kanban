@@ -1,11 +1,9 @@
 
 á
-java:S11920"¾Define a constant instead of duplicating this literal "Ğ”Ğ°Ğ½Ğ½Ğ¾Ğµ Ğ·Ğ°Ğ´Ğ°Ğ½Ğ¸Ğµ Ğ¿ĞµÑ€ĞµÑĞµĞºĞ°ĞµÑ‚ÑÑ Ñ ÑƒĞ¶Ğµ ÑĞ¾Ğ·Ğ´Ğ°Ğ½Ğ½Ñ‹Ğ¼Ğ¸, Ğ²Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´Ñ€ÑƒĞ³Ğ¾Ğµ Ğ²Ñ€ĞµĞ¼Ñ" 4 times.(¿ô²Ïıÿÿÿÿ8¢¶èÜ1
-–
-java:S1319«"sThe return type of this method should be an interface such as "SortedSet" rather than the implementation "TreeSet".(ŠÕùÿÿÿÿ8£¶èÜ1
+java:S11920"¾Define a constant instead of duplicating this literal "Ğ”Ğ°Ğ½Ğ½Ğ¾Ğµ Ğ·Ğ°Ğ´Ğ°Ğ½Ğ¸Ğµ Ğ¿ĞµÑ€ĞµÑĞµĞºĞ°ĞµÑ‚ÑÑ Ñ ÑƒĞ¶Ğµ ÑĞ¾Ğ·Ğ´Ğ°Ğ½Ğ½Ñ‹Ğ¼Ğ¸, Ğ²Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´Ñ€ÑƒĞ³Ğ¾Ğµ Ğ²Ñ€ĞµĞ¼Ñ" 4 times.(¿ô²Ïıÿÿÿÿ8•¢„òâ1
 E
-java:S1604"(Make this anonymous inner class a lambda(ÅÈÕõ8£¶èÜ1
-L	java:S1060"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8Ã¶èÜ1
-L	java:S106<"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8Ã¶èÜ1
-L	java:S106W"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8Å¶èÜ1
-L	java:S106f"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8Æ¶èÜ1
+java:S1604"(Make this anonymous inner class a lambda(ÅÈÕõ8–¢„òâ1
+L	java:S1060"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8·¢„òâ1
+L	java:S106<"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8¸¢„òâ1
+L	java:S106W"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8¹¢„òâ1
+L	java:S106f"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8º¢„òâ1

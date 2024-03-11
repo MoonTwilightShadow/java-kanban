@@ -1,0 +1,13 @@
+
+i
+java:S1192i"GDefine a constant instead of duplicating this literal "DELETE" 3 times.(ñ™µúÿÿÿÿ8äûÇûâ1
+
+java:S1488ø"^Immediately return this expression instead of assigning it to the temporary variable "taskId".(‹¡ğ€úÿÿÿÿ8åûÇûâ1
+t
+java:S3776J"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¯Ÿªñÿÿÿÿÿ8úûÇûâ1
+t
+java:S3776~"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¸ùÿúÿÿÿÿ8şûÇûâ1
+o
+java:S3776³"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(»–´8ÿûÇûâ1
+Q
+java:S1128"5Remove this unused import 'managers.HttpTaskManager'.(ñü§8‚üÇûâ1

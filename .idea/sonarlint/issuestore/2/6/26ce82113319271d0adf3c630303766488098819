@@ -1,0 +1,13 @@
+
+u	java:S116"TRename this field "API_TOKEN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö’îÿÿÿÿÿ8—àÛ­á1
+{
+java:S2142#"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(İºÈ8šàÛ­á1
+G	java:S106$"+Replace this use of System.out by a logger.(ñ·¤¬8šàÛ­á1
+{
+java:S21425"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(İºÈ8œàÛ­á1
+G	java:S1066"+Replace this use of System.out by a logger.(ñ·¤¬8œàÛ­á1
+{
+java:S2142K"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(İºÈ8àÛ­á1
+G	java:S106L"+Replace this use of System.out by a logger.(ñ·¤¬8àÛ­á1
+K
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8àÛ­á1

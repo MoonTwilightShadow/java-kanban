@@ -15,8 +15,6 @@ C
 src/Main.java,9\2\924f089edb4af5ee45c8a9d1129cd28e2b368138
 7
 out.csv,b\c\bcb4b826cb1ec74ec9220f3b0bf78bee70f85780
-P
- src/Validator/TimeValidator.java,d\6\d6201eacd7304f84eeeb15b1cd448d1cc9daf13d
 R
 "test/managers/TaskManagerTest.java,d\8\d8a326f252287bc9b82feb6f613bf527a72216d7
 X
@@ -37,3 +35,21 @@ O
 ,test/history/InMemoryHistoryManagerTest.java,f\d\fd823e4f9c4d51494eb76bf968ac467d73ecaec2
 H
 test/resources/empty.csv,4\c\4c1be679c8dc89c22d7034e5e8d562d3675bbdaa
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+H
+src/server/KVServer.java,2\1\217e8fad638dba588877f21a6184518a7bac14da
+L
+src/client/KVTaskClient.java,2\6\26ce82113319271d0adf3c630303766488098819
+J
+src/managers/Managers.java,2\1\21a45862de69fc2804a7a028677c4050a1cefc48
+Q
+!src/managers/HttpTaskManager.java,9\3\93ca916de36f5f7593b157b03fdd9b4fab50bd83
+N
+src/server/HttpTaskServer.java,5\d\5da536c50dbf37b3b318e55abab2c3b6fb8a98fc
+S
+#test/server/HttpTaskServerTest.java,6\f\6fa4f651d732f0c1be50ff8866bcb50caaee6b54
+V
+&test/managers/HttpTaskManagerTest.java,3\0\30817695354e2ea018a8e9e9cd49ae28a83d5354
+M
+test/server/KVServerTest.java,2\0\2087374f32fbcd46d9a2d4aca028130b41e6fe7f
