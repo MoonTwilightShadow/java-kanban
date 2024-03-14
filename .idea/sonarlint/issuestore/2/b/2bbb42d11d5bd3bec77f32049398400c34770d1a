@@ -1,9 +1,9 @@
 
-á
-java:S11920"¾Define a constant instead of duplicating this literal "Ğ”Ğ°Ğ½Ğ½Ğ¾Ğµ Ğ·Ğ°Ğ´Ğ°Ğ½Ğ¸Ğµ Ğ¿ĞµÑ€ĞµÑĞµĞºĞ°ĞµÑ‚ÑÑ Ñ ÑƒĞ¶Ğµ ÑĞ¾Ğ·Ğ´Ğ°Ğ½Ğ½Ñ‹Ğ¼Ğ¸, Ğ²Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´Ñ€ÑƒĞ³Ğ¾Ğµ Ğ²Ñ€ĞµĞ¼Ñ" 4 times.(¿ô²Ïıÿÿÿÿ8•¢„òâ1
-E
-java:S1604"(Make this anonymous inner class a lambda(ÅÈÕõ8–¢„òâ1
-L	java:S1060"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8·¢„òâ1
-L	java:S106<"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8¸¢„òâ1
-L	java:S106W"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8¹¢„òâ1
-L	java:S106f"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8º¢„òâ1
+‡
+java:S11924"¾Define a constant instead of duplicating this literal "Ğ”Ğ°Ğ½Ğ½Ğ¾Ğµ Ğ·Ğ°Ğ´Ğ°Ğ½Ğ¸Ğµ Ğ¿ĞµÑ€ĞµÑĞµĞºĞ°ĞµÑ‚ÑÑ Ñ ÑƒĞ¶Ğµ ÑĞ¾Ğ·Ğ´Ğ°Ğ½Ğ½Ñ‹Ğ¼Ğ¸, Ğ²Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´Ñ€ÑƒĞ³Ğ¾Ğµ Ğ²Ñ€ĞµĞ¼Ñ" 4 times.(¿ô²Ïıÿÿÿÿ8•¢„òâ1J$0d6921cb-e4c2-459c-8b48-19a4ddbbfa9e
+k
+java:S1604"(Make this anonymous inner class a lambda(ÅÈÕõ8–¢„òâ1J$fa9d32fe-3605-4828-b4eb-2435d30e2552
+r	java:S1064"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8·¢„òâ1J$55f90a19-ca80-4f32-a77a-7afb2369ddad
+r	java:S106@"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8¸¢„òâ1J$4b5fdb96-e1f7-4846-9bd2-e62629ec3765
+r	java:S106["+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8¹¢„òâ1J$dbf14611-afb0-4b12-8f63-9d0807d67b27
+r	java:S106j"+Replace this use of System.out by a logger.(¿ô²Ïıÿÿÿÿ8º¢„òâ1J$cfad56bb-4982-4a83-86f1-fade2376c99e

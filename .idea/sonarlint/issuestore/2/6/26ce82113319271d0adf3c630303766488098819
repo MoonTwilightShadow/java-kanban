@@ -1,13 +1,18 @@
 
-u	java:S116"TRename this field "API_TOKEN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö’îÿÿÿÿÿ8—àÛ­á1
-{
-java:S2142#"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(İºÈ8šàÛ­á1
-G	java:S106$"+Replace this use of System.out by a logger.(ñ·¤¬8šàÛ­á1
-{
-java:S21425"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(İºÈ8œàÛ­á1
-G	java:S1066"+Replace this use of System.out by a logger.(ñ·¤¬8œàÛ­á1
-{
-java:S2142K"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(İºÈ8àÛ­á1
-G	java:S106L"+Replace this use of System.out by a logger.(ñ·¤¬8àÛ­á1
-K
-java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8àÛ­á1
+›	java:S116"TRename this field "API_TOKEN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö’îÿÿÿÿÿ8†Ìàã1J$0553944b-5842-4256-804b-f5e825e5e018
+¡
+java:S2142("^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(İºÈ8‰Ìàã1J$b42a5096-4a5e-4d35-9e98-18bba3d0b241
+r	java:S106#"+Replace this use of System.out by a logger.(ïÊÿÿÿÿÿ8ŠÌàã1J$2eb60604-dabf-41e1-ae91-bb67ee964008
+m	java:S106)"+Replace this use of System.out by a logger.(ñ·¤¬8ŠÌàã1J$99851a13-1f40-48d4-ae70-50fca7013bdb
+^
+java:S3626<"Remove this redundant jump.(ûÁİ…8¦èÑàã1J$b6994868-144b-4b0b-9b00-3ef9b2819d16
+¡
+java:S2142>"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(İºÈ8‹Ìàã1J$0183c0ef-606f-45c4-a106-fe5dc0b09915
+r	java:S106;"+Replace this use of System.out by a logger.(²À–øÿÿÿÿ8‹Ìàã1J$6ea5051a-62fa-406c-aee3-e7c6e4717cf2
+m	java:S106?"+Replace this use of System.out by a logger.(ñ·¤¬8ŒÌàã1J$16808fcd-43c5-4dec-9232-e0d04db88402
+¡
+java:S2142Y"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(İºÈ8ŒÌàã1J$e82499c5-7d16-4598-81ae-48b4b709c0fd
+r	java:S106T"+Replace this use of System.out by a logger.(ÙÃÁ‘şÿÿÿÿ8¨èÑàã1J$678f8b58-cb90-47e3-a06c-14f5b8470824
+m	java:S106Z"+Replace this use of System.out by a logger.(ñ·¤¬8ãÕàã1J$c5ade98b-1c7b-44d0-a7f1-9fe1a8284b43
+q
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8ÇÕàã1J$72bb8008-0fa3-45ee-9634-08753925cf8e

@@ -31,6 +31,11 @@ public class KVTaskClient {
 
         try {
             HttpResponse<String> response = client.send(request, handler);
+            if (response.statusCode() != 200) {
+                System.out.println("Ошибка при регистрации клиента");
+                return;
+            }
+
             API_TOKEN = response.body();
         } catch (IOException | InterruptedException exception) {
             System.out.println(exception.getMessage());
@@ -49,7 +54,11 @@ public class KVTaskClient {
         HttpResponse.BodyHandler<String> handler = HttpResponse.BodyHandlers.ofString();
 
         try {
-            client.send(request, handler);
+            HttpResponse<String> response = client.send(request, handler);
+            if (response.statusCode() != 200) {
+                System.out.println("Ошибка при добавлении данных на сервер");
+                return;
+            }
         } catch (IOException | InterruptedException exception) {
             System.out.println(exception.getMessage());
             System.exit(1);
@@ -71,6 +80,11 @@ public class KVTaskClient {
 
         try {
             HttpResponse<String> response = client.send(request, handler);
+            if (response.statusCode() != 200) {
+                System.out.println("Ошибка при загрузке данных с сервера");
+                return result;
+            }
+
             result = response.body();
         } catch (IOException | InterruptedException exception) {
             System.out.println(exception.getMessage());

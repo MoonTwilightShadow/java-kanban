@@ -1,20 +1,18 @@
 
-T
-java:S1135 "2Complete the task associated to this TODO comment.(óËÃãøÿÿÿÿ8ÃÕøøâ1
-L	java:S106#"+Replace this use of System.out by a logger.(‰çÊºøÿÿÿÿ8ÄÕøøâ1
-G	java:S106%"+Replace this use of System.out by a logger.(€Ã˜Ï8ÄÕøøâ1
-L	java:S106,"+Replace this use of System.out by a logger.(ĞÕ±Ñùÿÿÿÿ8ÄÕøøâ1
-F	java:S1063"+Replace this use of System.out by a logger.(Ê³ß8ÅÕøøâ1
-F	java:S106="+Replace this use of System.out by a logger.(û€’^8ÆÕøøâ1
-G	java:S106?"+Replace this use of System.out by a logger.(€Ã˜Ï8ÆÕøøâ1
-L	java:S106F"+Replace this use of System.out by a logger.(ĞÕ±Ñùÿÿÿÿ8ÆÕøøâ1
-L	java:S106L"+Replace this use of System.out by a logger.(Ÿ…ëÎşÿÿÿÿ8ÈÕøøâ1
-G	java:S106Q"+Replace this use of System.out by a logger.(ÕÊ¼ã8ÈÕøøâ1
-L	java:S106T"+Replace this use of System.out by a logger.(—â„ùÿÿÿÿ8ÈÕøøâ1
-L	java:S106^"+Replace this use of System.out by a logger.(‹¤şÿÿÿÿ8äøûâ1
-G	java:S106b"+Replace this use of System.out by a logger.(Å—ô©8·Ó«ÿâ1
-L	java:S106k"+Replace this use of System.out by a logger.(™¾ë®şÿÿÿÿ8Øï«ÿâ1
-L	java:S106l"+Replace this use of System.out by a logger.(³Ú™—úÿÿÿÿ8§ ¬ÿâ1
-G	java:S106m"+Replace this use of System.out by a logger.(ÍÛŠ¡8§ ¬ÿâ1
-S
-java:S1128"1Remove this unused import 'java.io.OutputStream'.(Ó ³ÿÿÿÿÿ8•²úøâ1
+r	java:S106!"+Replace this use of System.out by a logger.(‰çÊºøÿÿÿÿ8ÄÕøøâ1J$e4c5717c-667f-4a67-9434-bd52582289e2
+m	java:S106#"+Replace this use of System.out by a logger.(€Ã˜Ï8ÄÕøøâ1J$39c67d40-3138-4d59-931d-dc2025c69bda
+r	java:S106*"+Replace this use of System.out by a logger.(ĞÕ±Ñùÿÿÿÿ8ÄÕøøâ1J$79fe5df3-2195-4fa6-a63f-d698832e154f
+l	java:S1061"+Replace this use of System.out by a logger.(Ê³ß8ÅÕøøâ1J$8e54e9ea-60b7-46be-a0bd-7517e74a22a8
+l	java:S106;"+Replace this use of System.out by a logger.(û€’^8ÆÕøøâ1J$9f056f5d-0716-4f7e-aab3-bcb8ae36ddd3
+m	java:S106="+Replace this use of System.out by a logger.(€Ã˜Ï8ÆÕøøâ1J$5e1f91ee-789b-4df4-b0d2-268a137db9e8
+r	java:S106D"+Replace this use of System.out by a logger.(ĞÕ±Ñùÿÿÿÿ8ÆÕøøâ1J$b3a2cae9-29d2-498d-aa5a-cc9d96585636
+r	java:S106J"+Replace this use of System.out by a logger.(Ÿ…ëÎşÿÿÿÿ8ÈÕøøâ1J$cc4941f4-239b-4e63-bb26-090d71700039
+m	java:S106O"+Replace this use of System.out by a logger.(ÕÊ¼ã8ÈÕøøâ1J$9a7f03db-5648-47d0-a628-06fb5d171f6a
+r	java:S106R"+Replace this use of System.out by a logger.(—â„ùÿÿÿÿ8ÈÕøøâ1J$79c3edff-e243-4272-8977-ae35a8ad4068
+r	java:S106\"+Replace this use of System.out by a logger.(‹¤şÿÿÿÿ8äøûâ1J$2766db56-c856-4745-94d6-1aae943ba451
+m	java:S106`"+Replace this use of System.out by a logger.(Å—ô©8·Ó«ÿâ1J$ce0a0819-a7ac-4d08-918a-a4d826b4201c
+r	java:S106i"+Replace this use of System.out by a logger.(™¾ë®şÿÿÿÿ8Øï«ÿâ1J$f3e102cc-f32a-4cef-aa84-189b364291ec
+r	java:S106j"+Replace this use of System.out by a logger.(³Ú™—úÿÿÿÿ8§ ¬ÿâ1J$c6260849-8d7e-46e6-a313-fbdce92d3176
+m	java:S106k"+Replace this use of System.out by a logger.(ÍÛŠ¡8§ ¬ÿâ1J$eccb278f-c16d-4e36-9143-cc63fd6d6674
+y
+java:S1128"1Remove this unused import 'java.io.OutputStream'.(Ó ³ÿÿÿÿÿ8•²úøâ1J$1667dffc-f3f2-4a55-83db-1d6a3a659363

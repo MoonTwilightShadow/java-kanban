@@ -1,13 +1,11 @@
 
-i
-java:S1192i"GDefine a constant instead of duplicating this literal "DELETE" 3 times.(ñ™µúÿÿÿÿ8äûÇûâ1
-
-java:S1488ø"^Immediately return this expression instead of assigning it to the temporary variable "taskId".(‹¡ğ€úÿÿÿÿ8åûÇûâ1
-t
-java:S3776J"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¯Ÿªñÿÿÿÿÿ8úûÇûâ1
-t
-java:S3776~"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¸ùÿúÿÿÿÿ8şûÇûâ1
-o
-java:S3776³"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(»–´8ÿûÇûâ1
-Q
-java:S1128"5Remove this unused import 'managers.HttpTaskManager'.(ñü§8‚üÇûâ1
+§
+java:S1488†"^Immediately return this expression instead of assigning it to the temporary variable "taskId".(‹¡ğ€úÿÿÿÿ8›½äßã1J$eb6eb5c1-09db-4bd9-92c1-b44a01d32138
+š
+java:S3776N"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¯Ÿªñÿÿÿÿÿ8Ú½äßã1J$ee0ad314-e2bf-4042-ad43-f28dc7f7f514
+›
+java:S3776†"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¸ùÿúÿÿÿÿ8Íêşßã1J$1c3e2b9f-e884-4c05-ae62-03645e33bbf4
+•
+java:S3776¾"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(»–´8Ñêşßã1J$17b09e57-6ee3-4900-b30c-3c6595b6143e
+w
+java:S1128"5Remove this unused import 'managers.HttpTaskManager'.(ñü§8Ö€àã1J$00ddb1f2-1344-4d20-ba50-0571d1f17e8c

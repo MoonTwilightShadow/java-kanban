@@ -16,12 +16,16 @@ import java.io.InputStream;
 import java.net.InetSocketAddress;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.util.Optional;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class HttpTaskServer {
     public static final int PORT = 8080;
     private static final Charset DEFAULT_CHARSET = StandardCharsets.UTF_8;
+    private static final String GET = "GET";
+    private static final String POST = "POST";
+    private static final String DELETE = "DELETE";
     private final HttpServer server;
     private TaskManager manager;
 
@@ -49,7 +53,7 @@ public class HttpTaskServer {
 
     private void getPrioritizedTasks(HttpExchange exchange) throws IOException {
         try {
-            if ("GET".equals(exchange.getRequestMethod())) {
+            if (GET.equals(exchange.getRequestMethod())) {
                 sendText(exchange, gson.toJson(manager.getPrioritizedTask()));
             } else {
                 exchange.sendResponseHeaders(405, 0);
@@ -61,7 +65,7 @@ public class HttpTaskServer {
 
     private void getHistory(HttpExchange exchange) throws IOException {
         try {
-            if ("GET".equals(exchange.getRequestMethod())) {
+            if (GET.equals(exchange.getRequestMethod())) {
                 sendText(exchange, gson.toJson(manager.getHistory()));
             } else {
                 exchange.sendResponseHeaders(405, 0);
@@ -76,7 +80,7 @@ public class HttpTaskServer {
             String query = exchange.getRequestURI().getQuery();
 
             switch (exchange.getRequestMethod()) {
-                case "GET":
+                case GET:
                     if (query == null) {
                         sendText(exchange, gson.toJson(manager.getTasks()));
                     } else {
@@ -88,11 +92,15 @@ public class HttpTaskServer {
                     }
                     break;
 
-                case "POST":
-                    InputStream is = exchange.getRequestBody();
-                    String body = new String(is.readAllBytes(), DEFAULT_CHARSET);
+                case POST:
+                    Optional<String> body = getBody(exchange);
 
-                    Task task = gson.fromJson(body, Task.class);
+                    if (body.isEmpty()) {
+                        exchange.sendResponseHeaders(400, 0);
+                        return;
+                    }
+
+                    Task task = gson.fromJson(body.get(), Task.class);
 
                     if (task.getId() == null) {
                         manager.create(task);
@@ -102,7 +110,7 @@ public class HttpTaskServer {
                     exchange.sendResponseHeaders(200, 0);
                     break;
 
-                case "DELETE":
+                case DELETE:
                     if (query == null) {
                         manager.deleteAllTasks();
                     } else {
@@ -128,7 +136,7 @@ public class HttpTaskServer {
             String query = exchange.getRequestURI().getQuery();
 
             switch (exchange.getRequestMethod()) {
-                case "GET":
+                case GET:
                     if (query == null) {
                         sendText(exchange, gson.toJson(manager.getSubTasks()));
                     } else {
@@ -140,12 +148,15 @@ public class HttpTaskServer {
                     }
                     break;
 
-                case "POST":
-                    InputStream is = exchange.getRequestBody();
-                    String body = new String(is.readAllBytes(), DEFAULT_CHARSET);
+                case POST:
+                    Optional<String> body = getBody(exchange);
 
-                    SubTask task = gson.fromJson(body, SubTask.class);
+                    if (body.isEmpty()) {
+                        exchange.sendResponseHeaders(400, 0);
+                        return;
+                    }
 
+                    SubTask task = gson.fromJson(body.get(), SubTask.class);
 
                     if (task.getId() == null) {
                         manager.create(task);
@@ -155,7 +166,7 @@ public class HttpTaskServer {
                     exchange.sendResponseHeaders(200, 0);
                     break;
 
-                case "DELETE":
+                case DELETE:
                     if (query == null) {
                         manager.deleteAllSubTasks();
                     } else {
@@ -181,7 +192,7 @@ public class HttpTaskServer {
             String query = exchange.getRequestURI().getQuery();
 
             switch (exchange.getRequestMethod()) {
-                case "GET":
+                case GET:
                     if (query == null) {
                         sendText(exchange, gson.toJson(manager.getEpicTasks()));
                     } else {
@@ -193,12 +204,15 @@ public class HttpTaskServer {
                     }
                     break;
 
-                case "POST":
-                    InputStream is = exchange.getRequestBody();
-                    String body = new String(is.readAllBytes(), DEFAULT_CHARSET);
+                case POST:
+                    Optional<String> body = getBody(exchange);
 
-                    EpicTask task = gson.fromJson(body, EpicTask.class);
+                    if (body.isEmpty()) {
+                        exchange.sendResponseHeaders(400, 0);
+                        return;
+                    }
 
+                    EpicTask task = gson.fromJson(body.get(), EpicTask.class);
 
                     if (task.getId() == null) {
                         manager.create(task);
@@ -208,7 +222,7 @@ public class HttpTaskServer {
                     exchange.sendResponseHeaders(200, 0);
                     break;
 
-                case "DELETE":
+                case DELETE:
                     if (query == null) {
                         manager.deleteAllEpicTasks();
                     } else {
@@ -232,7 +246,7 @@ public class HttpTaskServer {
     private void getEpicSubtask(HttpExchange exchange) throws IOException {
         String query = exchange.getRequestURI().getQuery();
 
-        if ("GET".equals(exchange.getRequestMethod())) {
+        if (GET.equals(exchange.getRequestMethod())) {
             try {
                 sendText(exchange, gson.toJson(manager.getEpicSubTasks(getId(query))));
             } catch (NumberFormatException | NullPointerException exception) {
@@ -259,5 +273,15 @@ public class HttpTaskServer {
 
     public void stop() {
         server.stop(0);
+    }
+
+    private Optional<String> getBody(HttpExchange exchange) throws IOException {
+        InputStream is = exchange.getRequestBody();
+        String body = new String(is.readAllBytes(), DEFAULT_CHARSET);
+
+        if (body.isEmpty())
+            return Optional.empty();
+
+        return Optional.of(body);
     }
 }

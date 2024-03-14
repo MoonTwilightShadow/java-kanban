@@ -37,6 +37,10 @@ public class InMemoryTaskManager implements TaskManager {
         this.nextId = nextId;
     }
 
+    public int getNextId() {
+        return nextId;
+    }
+
     @Override
     public void create(Task task) {
         if (validate(task)) {

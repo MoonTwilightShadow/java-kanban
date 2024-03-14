@@ -9,6 +9,7 @@ import model.SubTask;
 import model.Task;
 
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -29,21 +30,31 @@ public class HttpTaskManager extends FileBackedTasksManager {
         kvClient.put("subTasks", gson.toJson(subTasks));
         kvClient.put("epicTasks", gson.toJson(epicTasks));
         kvClient.put("historyManager", historyToString(historyManager));
+        kvClient.put("id", String.valueOf(getNextId()));
     }
 
     public void load() {
         Gson gson = new GsonBuilder().serializeNulls().setPrettyPrinting().create();
+        String response;
+        Type type = new TypeToken<HashMap<Integer, Task>>() {}.getType();
+        response = kvClient.load("tasks");
+        if (response != null)
+            tasks = gson.fromJson(response, type);
 
-        Type type = new TypeToken<HashMap<Integer, Task>>(){}.getType();
-        tasks = gson.fromJson(kvClient.load("tasks"), type);
+        type = new TypeToken<HashMap<Integer, SubTask>>() {}.getType();
+        response = kvClient.load("subTasks");
+        if (response != null)
+            subTasks = gson.fromJson(response, type);
 
-        type = new TypeToken<HashMap<Integer, SubTask>>(){}.getType();
-        subTasks = gson.fromJson(kvClient.load("subTasks"), type);
+        type = new TypeToken<HashMap<Integer, EpicTask>>() {}.getType();
+        response = kvClient.load("epicTasks");
+        if (response != null)
+            epicTasks = gson.fromJson(response, type);
 
-        type = new TypeToken<HashMap<Integer, EpicTask>>(){}.getType();
-        epicTasks = gson.fromJson(kvClient.load("epicTasks"), type);
-
-        List<Integer> historyIds = historyIdsFromString(kvClient.load("historyManager"));
+        response = kvClient.load("historyManager");
+        List<Integer> historyIds = new ArrayList<>();
+        if (response != null)
+             historyIds = historyIdsFromString(response);
 
         for (Integer historyId : historyIds) {
             Task task;
@@ -59,8 +70,13 @@ public class HttpTaskManager extends FileBackedTasksManager {
             historyManager.add(task);
         }
 
+        response = kvClient.load("id");
+        if (response != null)
+            setNextId(Integer.parseInt(response));
+
         prioritizedTask.addAll(tasks.values());
         prioritizedTask.addAll(subTasks.values());
+
     }
 
 }
